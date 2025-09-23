@@ -4,12 +4,16 @@ import { ListaPessoas } from './components/lista-pessoas/lista-pessoas';
 import { CalculadoraRetangulo } from './components/calculadora-retangulo/calculadora-retangulo';
 import { CalculadoraMedia } from './components/calculadora-media/calculadora-media';
 import { CalculadoraTemperatura } from './components/calculadora-temperatura/calculadora-temperatura';
+import { ListaAlunos } from './components/lista-alunos/lista-alunos';
+import { CadastroAluno } from './components/cadastro-aluno/cadastro-aluno';
 
 export const routes: Routes = [
     { path: "calculadora", component: Calculadora },
     { path: "lista-pessoas", component: ListaPessoas },
-    { path:"calculadora-retangulo", component: CalculadoraRetangulo },
-    { path: "calculadora-media", component: CalculadoraMedia},
-    { path: "calculadora-temperatura", component: CalculadoraTemperatura}
+    { path: "calculadora-retangulo", component: CalculadoraRetangulo },
+    { path: "calculadora-media", component: CalculadoraMedia },
+    { path: "calculadora-temperatura", component: CalculadoraTemperatura },
+    { path: "alunos", component: ListaAlunos },
+    { path: "alunos/cadastro", component: CadastroAluno}
 ];
 //SPA: Single Page Application
