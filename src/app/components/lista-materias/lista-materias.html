@@ -1,0 +1,23 @@
+<h2>Lista de Matérias</h2>
+<div>
+    <a routerLink="/materias/cadastro">Cadastro</a>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Matérias</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(materia of materias; track materia){
+            <tr>
+                <td>{{materia.nome}}</td>
+                <td>
+                    <button (click)="apagar(materia)">Apagar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

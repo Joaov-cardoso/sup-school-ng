@@ -52,7 +52,6 @@ export class CadastroAluno {
     this.alunos.push(aluno);
 
     this.salvarLocalStorage();
-    this.router.navigate(["/alunos"])
   }
 
   salvarLocalStorage(): void{
