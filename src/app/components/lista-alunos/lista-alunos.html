@@ -19,9 +19,10 @@
             <tr>
                 <td>{{aluno.nome}}</td>
                 <td>{{aluno.media}}</td>
-                <td>{{aluno.frequecia}}</td>
+                <td>{{aluno.frequencia}}</td>
                 <td>{{aluno.status}}</td>
                 <td>
+                    <button (click)="editar(aluno)">Editar</button>
                     <button (click)="apagar(aluno)">Apagar</button>
                 </td>
             </tr>

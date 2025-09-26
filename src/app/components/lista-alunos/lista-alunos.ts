@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 interface Aluno{
   id: string;
@@ -7,7 +7,7 @@ interface Aluno{
   nota1: number;
   nota2: number;
   nota3: number;
-  frequecia: number;
+  frequencia: number;
   media: number;
   status: string;
 }
@@ -22,7 +22,7 @@ export class ListaAlunos {
   // Propriedades
   alunos: Aluno[];
 
-  constructor(){
+  constructor(private router: Router){
     this.alunos = this.carregarAlunosLocalStorage();
   }
   
@@ -41,6 +41,10 @@ export class ListaAlunos {
     let indiceParaApagar = this.alunos.indexOf(aluno);
     this.alunos.splice(indiceParaApagar,)
     this.salvarLocalStorage()
+  }
+
+  editar(aluno: Aluno): void{
+    this.router.navigate([`/alunos/editar/${aluno.id}`])
   }
 
   salvarLocalStorage(): void{

@@ -21,11 +21,14 @@ export const routes: Routes = [
     { path: "calculadora-temperatura", component: CalculadoraTemperatura },
     { path: "alunos", component: ListaAlunos },
     { path: "alunos/cadastro", component: CadastroAluno },
+    { path: "alunos/editar/:id", component: CadastroAluno },
+
+
     { path: "turma", component: ListaTurmas },
     { path: "turma/cadastro", component: CadastroTurma },
-    { path: "materias", component: ListaMaterias},
-    {path: "materias/cadastro", component: CadastroMateria},
-    {path: "professores", component: ListaProfessores},
-    {path: "professores/cadastro", component: CadastroProfessor}
+    { path: "materias", component: ListaMaterias },
+    { path: "materias/cadastro", component: CadastroMateria },
+    { path: "professores", component: ListaProfessores },
+    { path: "professores/cadastro", component: CadastroProfessor }
 ];
 //SPA: Single Page Application
